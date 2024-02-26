@@ -9,15 +9,16 @@
 
 .card {
   max-width: 276px;
+  min-height: 160px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   background-color: #fff;
   padding: 15px;
   border-radius: 35px;
   gap: 10px;
   cursor: default;
-  /* box-shadow: 0 5px 0px #ffe5c4; */
   border: 1px solid #fff;
   position: relative;
 }
