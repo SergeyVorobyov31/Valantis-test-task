@@ -34,8 +34,10 @@ const Cards = (props) => {
             .then((res) =>{
                 getItems(res)
                     .then((res) => {
-                        setLoading(false)
-                        setCollectionItems(res)
+                        if(res !== undefined) {
+                            setLoading(false)
+                            setCollectionItems(res)
+                        }
                     })
                     .catch(() => setLoading(true))
             })
@@ -62,7 +64,7 @@ const Cards = (props) => {
     }
     const prevPage = () => setCurrentPage(prev => prev - 1)
     const nextPage = () => setCurrentPage(prev => prev + 1)
-    console.log(filteredArray, currentItem, currentPage)
+
     return(
         <>
             <div className="collection">
