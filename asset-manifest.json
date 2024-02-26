@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Valantis-test-task/static/css/main.f07936b1.css",
+    "main.css": "/Valantis-test-task/static/css/main.c764d830.css",
     "main.js": "/Valantis-test-task/static/js/main.321cfb27.js",
     "static/js/453.6393fe9b.chunk.js": "/Valantis-test-task/static/js/453.6393fe9b.chunk.js",
     "static/media/beige-circle.png": "/Valantis-test-task/static/media/beige-circle.66ef5609c9f79b264c98.png",
     "static/media/Manrope-Bold.woff2": "/Valantis-test-task/static/media/Manrope-Bold.1fc53579e1040cbf987d.woff2",
     "static/media/Manrope-Regular.woff2": "/Valantis-test-task/static/media/Manrope-Regular.cb78aabfaaf5d95c8665.woff2",
     "index.html": "/Valantis-test-task/index.html",
-    "main.f07936b1.css.map": "/Valantis-test-task/static/css/main.f07936b1.css.map",
+    "main.c764d830.css.map": "/Valantis-test-task/static/css/main.c764d830.css.map",
     "main.321cfb27.js.map": "/Valantis-test-task/static/js/main.321cfb27.js.map",
     "453.6393fe9b.chunk.js.map": "/Valantis-test-task/static/js/453.6393fe9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f07936b1.css",
+    "static/css/main.c764d830.css",
     "static/js/main.321cfb27.js"
   ]
 }
