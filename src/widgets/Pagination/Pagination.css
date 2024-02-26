@@ -32,6 +32,14 @@
   margin-bottom: 40px;
 }
 
+.page__item {
+  margin-right: 3px;
+}
+
+.page__item:last-of-type() {
+  margin-right: 0;
+}
+
 .page__link {
   display: flex;
   align-items: center;
