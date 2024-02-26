@@ -5,6 +5,7 @@
   column-gap: 12px;
   justify-content: center;
   height: fit-content;
+  padding-bottom: 20px;
 }
 
 .card {
@@ -30,6 +31,12 @@
   padding: 5px;
 }
 
+.collection__arrow {
+  min-width: 27px;
+  min-height: 18px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 1460px) {
   .collection {
     grid-template-columns: repeat(4, 276px);
@@ -51,5 +58,11 @@
 @media screen and (max-width: 600px) {
   .collection {
     grid-template-columns: repeat(2, 150px);
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .collection {
+    grid-template-columns: 200px;
   }
 }

@@ -2,6 +2,8 @@ import { useState, useEffect, useMemo } from "react"
 import { getIDs, getItems } from "../../services/API"
 import Loading from "../Loading/ui"
 import Pagination from "../Pagination"
+import ArrowLeft from "../../shared/images/arrow-left.png"
+import ArrowRight from "../../shared/images/arrow-right.png"
 import "./Cards.css"
 
 const Cards = (props) => {
@@ -19,6 +21,7 @@ const Cards = (props) => {
 
     useEffect(() => {
         setLoading(true)
+        setCurrentPage(1)
         if (typeof(filteredIDs) !== "number" && filteredIDs.length !== 0) {
             getItems(filteredIDs)
             .then((res) => {
@@ -43,7 +46,7 @@ const Cards = (props) => {
     const filteredArray = collectionItems?.filter((obj, idx, arr) => 
         idx === arr.findIndex((t) => t.id === obj.id
     ));
-
+    
     const lastItemIndex = currentPage * itemsPerPage
     const firstItemIndex = lastItemIndex - itemsPerPage
 
@@ -59,7 +62,7 @@ const Cards = (props) => {
     }
     const prevPage = () => setCurrentPage(prev => prev - 1)
     const nextPage = () => setCurrentPage(prev => prev + 1)
-
+    console.log(filteredArray, currentItem, currentPage)
     return(
         <>
             <div className="collection">
@@ -80,12 +83,12 @@ const Cards = (props) => {
                 filteredArray.length > itemsPerPage &&
                 <div className="pagination__wrapper">
                     <button 
-                        className="button text"
+                        className="button"
                         type="button"
                         onClick={prevPage}
                         disabled={currentPage === 1}
                     >
-                        &#129044;
+                        <img className="collection__arrow" src={ArrowLeft} alt="<—" loading="lazy"/>
                     </button>
                     <Pagination
                         itemsPerPage={itemsPerPage}
@@ -94,12 +97,12 @@ const Cards = (props) => {
                         currentPage={currentPage}
                     />
                     <button
-                        className="button text"
+                        className="button"
                         type="button"
                         onClick={nextPage}
                         disabled={currentPage === Math.ceil(filteredArray?.length / itemsPerPage)}
                     >
-                        &#129046;
+                        <img className="collection__arrow" src={ArrowRight} alt="—>" loading="lazy"/>
                     </button>
                 </div>
             }
