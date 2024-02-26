@@ -1,0 +1,29 @@
+body {
+  overflow-x: hidden;
+  background-color: var(--color-main-beige);
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-image: url("../../shared//images/beige-circle.png");
+  background-size: 1400px;
+  background-position: center right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+
+html, body {
+  scrollbar-gutter: stable;
+}
+
+html, body, #root, .app {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

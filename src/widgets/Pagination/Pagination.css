@@ -1,0 +1,54 @@
+.pagination {
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-block: 20px;
+  overflow-x: scroll;
+}
+
+.pagination::-webkit-scrollbar {
+  height: 5px;
+}
+
+.pagination::-webkit-scrollbar-track {
+  background: var(--color-main-beige);
+}
+
+.pagination::-webkit-scrollbar-thumb {
+  background-color: var(--color-main-burgundy);
+  border-radius: 20px;
+  border: 3px solid var(--color-main-burgundy);
+}
+
+.pagination__wrapper {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  max-width: 90%;
+  justify-content: center;
+  margin:  0 auto;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.page__link {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  transition: all .2s linear;
+}
+
+.page__link:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.page__link.page__link--active {
+  transform: none;
+}
+
+.page__link--active {
+  font-size: 25px !important;
+  font-weight: 700 !important;
+}

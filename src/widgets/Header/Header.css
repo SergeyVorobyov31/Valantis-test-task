@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 20px;
+}
+
+.header__logo {
+  cursor: default;
+}
+
+.header__img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  transition: all .2s linear;
+}
+
+.header__img:hover {
+  cursor: pointer;
+  opacity: .7;
+}

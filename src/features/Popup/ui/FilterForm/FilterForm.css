@@ -1,0 +1,47 @@
+.product-filter {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  padding-top: 50px;
+  padding-inline: 45px;
+  position: relative;
+}
+
+.product-filter__button {
+  width: fit-content;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding-block: 5px;
+  padding: 5px 15px;
+  transition: all .2s linear;
+}
+
+.product-filter__button:hover {
+  opacity: .7;
+}
+
+.product-filter-error {
+  position: absolute;
+  bottom: -20px;
+  color: red !important;
+  font-size: 10px !important;
+}
+
+.product-filter-message {
+  position: absolute;
+  bottom: -20px;
+  font-size: 10px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .product-filter {
+    padding-inline: 0;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .product-filter {
+    padding-top: 40px;
+  }
+}
