@@ -58,6 +58,9 @@
 .popup__filter-button {
   cursor: pointer;
   transition: all .2s linear;
+  padding: 3px 5px;
+  border: 2px solid var(--color-main-beige);
+  border-radius: 5px;
 }
 
 .popup__filter-button:last-of-type::after {
@@ -69,7 +72,8 @@
 }
 
 .popup__filter-button--active {
-  opacity: .7;
+  border: 2px solid #fff;
+  opacity: 1;
 }
 
 @media screen and (max-width: 500px) {
